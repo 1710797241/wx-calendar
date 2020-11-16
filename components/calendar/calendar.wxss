@@ -112,15 +112,17 @@
   top: 15rpx;
   padding: 0 10rpx;
   padding-left: 20rpx;
-  height: 50rpx;
-  line-height: 50rpx;
+  height: 44rpx;
+  line-height: 44rpx;
   border: 1px #52b8f5 solid;
   border-right: none;
   font-size: 28rpx;
   border-top-left-radius: 50rpx;
   border-bottom-left-radius: 50rpx;
-  color: #52b8f5;
-  background: rgba(82, 184, 245, 0.1);
+  color: #fff;
+  background: rgba(159, 187, 240, 100);
+  font-size: 24rpx;
+  text-align: center;
 }
 
 .date-befor, .date-after {
@@ -145,15 +147,27 @@
 
 .calendar-header {
   display: flex;
+  justify-content: space-around;
 }
 
 .calendar-header view {
-  width: 100%;
+  width: 36rpx;
   text-align: center;
-  line-height: 80rpx;
-  color: #52b8f5;
-}
+  /* line-height: 80rpx; */
 
+}
+.weeday{
+  width: 40rpx;
+  text-align: center;
+  color: rgba(16, 16, 16, 100);
+  background: #fff;
+  font-size: 28rpx;
+  line-height: 40rpx;
+  text-align: center;
+  height: 40rpx;
+  border-radius: 50%;
+  margin-bottom: 20rpx;
+}
 .calendar-body {
   display: flex;
   flex-wrap: wrap;
@@ -161,17 +175,24 @@
 
 .calender-body-date-week {
   display: flex;
+  justify-content: space-around;
   width: 100%;
-  border-bottom: 1px #f5f5f5 solid;
+  align-items: center;
+  /* border-bottom: 1px #f5f5f5 solid; */
 }
 
 .date {
-  position: relative;
-  width: 100%;
+  /* position: relative; */
+  width: 40rpx;
   text-align: center;
-  color: #1c1c1c;
+  color: rgba(16, 16, 16, 100);
   background: #fff;
-  line-height: 100rpx;
+  font-size: 28rpx;
+  line-height: 40rpx;
+  text-align: center;
+  height: 40rpx;
+  border-radius: 50%;
+  margin-bottom: 10rpx;
 }
 
 .date.active {
@@ -179,11 +200,11 @@
 }
 
 .placeholder {
-  color: #a4a4a4;
+  color: #fff;
 }
 
 .date-current {
-  background: #52b8f5;
+  background: #F6B42B;
   color: #fff;
 }
 

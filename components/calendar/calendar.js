@@ -215,6 +215,7 @@ Component({
       month = month < 10 ? "0" + month : month
       date = date < 10 ? "0" + date : date
       this.triggerEvent('getdate', { year, month, date })
+      console.log(this.data.canlender,'canlender')
     },
     /**
      * 时间计算
