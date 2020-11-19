@@ -131,7 +131,7 @@
   justify-content: center;
   align-items: center;
   height: 80rpx;
-  width: 80rpx;
+  /* width: 80rpx; */
   text-align: center;
   line-height: 80rpx;
   /* margin-right: 20rpx; */
@@ -196,13 +196,18 @@
 }
 
 .date.active {
-  background: red;
+  background: #5493F2 100%;
+  color: #fff;
+
 }
 
 .placeholder {
   color: #fff;
 }
-
+.arrow{
+  width: 36rpx;
+  height: 36rpx;
+}
 .date-current {
   background: #F6B42B;
   color: #fff;

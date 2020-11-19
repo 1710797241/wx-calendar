@@ -86,6 +86,7 @@ Component({
 
     },
     selectDay(e) {
+      
 
       let index = e.currentTarget.dataset.index;
       let week = e.currentTarget.dataset.week;
@@ -94,7 +95,15 @@ Component({
       if (!ischeck) return false;
       let month = canlender.weeks[week][index].month < 10 ? "0" + canlender.weeks[week][index].month : canlender.weeks[week][index].month
       let date = canlender.weeks[week][index].date < 10 ? "0" + canlender.weeks[week][index].date : canlender.weeks[week][index].date
+      console.log('选择日期',canlender.year + "-" + month + "-" + date)
+      let currentDate = new Date()
+      let selectDate = new Date(canlender.year + "-" + month + "-" + date)
+      console.log('currentDate',currentDate,'selectDate',selectDate)
+      if(selectDate.getTime() < currentDate.getTime()){
+        return;
+      }
       this.getWeek(canlender.year + "-" + month + "-" + date);
+
 
     },
     packup() {
@@ -171,10 +180,11 @@ Component({
       }
       // 循环本月天数添加到数组
       for (let i = 1; i <= new Date(year, month, 0).getDate(); i++) {
+        console.log('year',year,'month',month)
         let have = false;
         for (let j = 0; j < selected.length; j++) {
           let selDate = selected[j].date.split('-');
-
+            console.log(selDate,'selDate')
           if (Number(year) === Number(selDate[0]) && Number(month) === Number(selDate[1]) && Number(i) === Number(selDate[2])) {
             have = true;
           }

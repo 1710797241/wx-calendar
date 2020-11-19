@@ -1,6 +1,7 @@
 <view class='timeAxisView'> 
-<timeAxis isCurent="{{true}}" axisTitle="活动1" axisTime="2019-05-21"/>
-<timeAxis axisTitle="活动2" axisTime="2019-05-21"/>
-<timeAxis textArray="{{textArray}}"  axisTitle="活动3" axisTime="2019-05-21"/>
-<timeAxis axisTitle="活动3" axisTime="2019-05-21" isShowLeftLine="{{false}}"/>
+<timeAxis isCurent="{{true}}" textArray="{{textArray}}" axisTitle="活动1" axisTime="2019-05-21"/>
+
+<timeAxis isCurent="{{true}}" textArray="{{textArray}}" axisTitle="活动2" axisTime="2019-05-21"/>
+<timeAxis isCurent="{{true}}" textArray="{{textArray}}"  axisTitle="活动3" axisTime="2019-05-21"/>
+<timeAxis axisTitle="活动3" textArray="{{textArray}}" axisTime="2019-05-21" isShowLeftLine="{{false}}"/>
 </view>

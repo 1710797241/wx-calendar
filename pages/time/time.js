@@ -5,7 +5,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-    textArray:["11",'22'],
+    textArray:["已报名人数:1/10"],
 
     axis:[
       {
