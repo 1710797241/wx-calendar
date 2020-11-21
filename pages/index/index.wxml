@@ -9,7 +9,7 @@
  * bindselect [function] 日历是否被打开 
  * bindgetdate [function] 当前选择的日期
  * is-open [Boolean} 是否开启插入模式
-
+  *bindgetchangemonth 月份切换
   -->
 <!-- <view class='other'>我是其他元素</view> -->
-<calendar is-open="true"   selected="{{selected}}" bindselect="bindselect" bindgetdate="bindgetdate" />
+<calendar is-open="true"   selected="{{selected}}" bindgetchangemonth="bindgetchangemonth"  bindselect="bindselect" bindgetdate="bindgetdate" />

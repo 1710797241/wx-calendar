@@ -36,5 +36,11 @@ Page({
     let time = e.detail;
     console.log(time)
 
+  },
+  bindgetchangemonth(e){
+    let date = e.detail;
+    console.log(date,'切换')
+
   }
+  
 })

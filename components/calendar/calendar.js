@@ -144,6 +144,8 @@ Component({
       }
       let year = this.data.canlender.year + "-" + this.data.canlender.month + "-" + this.data.canlender.date
       let _date = this.getDate(year, num, types === 'month' ? "month" : "day");
+      console.log("_date",_date)
+      this.triggerEvent('getchangemonth', { date:_date})
       this.getWeek(_date);
     },
     // 获取日历内容
